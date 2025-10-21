@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import { MovieModalContext } from './MovieModalContext';
-import { MovieDetailModal } from '../../screens/Movie/components/modals/MovieDetailModal';
+import { MovieDetailModal } from '../../components/Organism/modals/MovieDetailModal';
 
 interface MovieModalProviderProps {
   children: ReactNode;

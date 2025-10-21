@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { ScrollView, View, ActivityIndicator, Text } from 'react-native';
 import { styles } from './styles.ts';
-import { SectionsList } from './components/sections/SectionsList.tsx';
-import { MovieCarousel } from './components/carousel/MovieCarousel';
+import { SectionsList } from '../../components/Organism/sections/SectionsList.tsx'
+import { MovieCarousel } from '../../components/Organism/carousel/MovieCarousel.tsx';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { GenresBar } from './components/genre/GenresBar.tsx';
+import { GenresBar } from '../../components/Organism/genre/GenresBar.tsx';
 import { colors } from '../../constants/colors.ts';
 import { Genre, GENRES } from '../../constants/genres';
 import LinearGradient from 'react-native-linear-gradient';
-import { PromoBanner } from '../Movie/components/promo/PromoBanner.tsx';
+import { PromoBanner } from '../../components/Organism/promo/PromoBanner.tsx';
 import { usePopularMovies } from '../../hooks/usePopularMovies.ts';
 import { SectionData } from '../../types/Section.ts';
 import { NavigationProp, useNavigation } from '@react-navigation/native';

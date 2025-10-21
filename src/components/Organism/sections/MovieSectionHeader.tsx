@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import { TextCustom } from '../../../../components/atoms/Text/TextCustom';
+import { TextCustom } from '../../../components/atoms/Text/TextCustom';
 import { styles } from './styles';
-import { Button } from '../../../../components/atoms/Button/Button';
+import { Button } from '../../../components/atoms/Button/Button';
 
 type Props = {
   title: string;

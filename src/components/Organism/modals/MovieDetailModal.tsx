@@ -1,26 +1,26 @@
 import { Modal, View, ScrollView, ActivityIndicator } from 'react-native';
-import { TextCustom } from '../../../../components/atoms/Text/TextCustom';
-import { Button } from '../../../../components/atoms/Button/Button';
+import { TextCustom } from '../../atoms/Text/TextCustom';
+import { Button } from '../../atoms/Button/Button'
 import { styles } from './styles';
-import { colors } from '../../../../constants/colors';
-import { useMovieModal } from '../../../../contexts/MovieModal/MovieModalContext';
-import { useMovieDetails } from '../../../../hooks/useMovieDetails';
+import { colors } from '../../../constants/colors';
+import { useMovieModal } from '../../../contexts/MovieModal/MovieModalContext';
+import { useMovieDetails } from '../../../hooks/useMovieDetails';
 
 export const MovieDetailModal = () => {
   const { selectedMovieId, isModalVisible, closeMovieDetails } =
     useMovieModal();
 
 
-  const {  data, loading, error } = useMovieDetails(
-  selectedMovieId ?? 0,
-  !!selectedMovieId && isModalVisible
-);
+  const { data, loading, error } = useMovieDetails(
+    selectedMovieId ?? 0,
+    !!selectedMovieId && isModalVisible
+  );
 
   const formatTime = (minutes: number) => {
     const hours = Math.floor(minutes / 60);
     const mins = minutes % 60;
     return hours > 0 ? `${hours}h ${mins}m` : `${mins}m`;
-  };  
+  };
 
   return (
     <Modal

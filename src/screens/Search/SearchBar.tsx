@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import { styles } from '../styles';
-import { Button } from '../../../components/atoms/Button/Button';
-import { InputText } from '../../../components/atoms/InputText/InputText';
+import { styles } from '../Search/styles';
+import { Button } from '../../components/atoms/Button/Button';
+import { InputText } from '../../components/atoms/InputText/InputText';
 
 interface SearchBarProps {
   value: string;

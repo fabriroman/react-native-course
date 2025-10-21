@@ -1,9 +1,9 @@
 import { FlatList, View } from 'react-native';
-import { Movie } from '../../../../types/Movie';
-import { MovieItem } from '../items/MovieItem';
+import { Movie } from '../../../types/Movie';
+import { MovieItem } from '../../../components/atoms/items/MovieItem';
 import { styles } from './styles';
-import { SectionType } from '../../../../types/Section';
-import { BestMovieItem } from '../items/BestMovieItem';
+import { SectionType } from '../../../types/Section';
+import { BestMovieItem } from '../../../components/atoms/items/BestMovieItem';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export interface MovieGridProps {

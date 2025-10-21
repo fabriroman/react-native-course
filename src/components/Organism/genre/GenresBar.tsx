@@ -1,8 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 import { styles } from './styles';
-import { Button } from '../../../../components/atoms/Button/Button';
-import { Genre } from '../../../../constants/genres';
+import { Button } from '../../atoms/Button/Button';
+import { Genre } from '../../../constants/genres';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type Props = {

@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { TextCustom } from '../../components/atoms/Text/TextCustom';
 import { colors } from '../../constants/colors';
 import { useWishlist } from '../../contexts/Wishlist/WishlistContext';
-import { MovieGrid } from '../Movie/components/grid/MovieGrid';
+import { MovieGrid } from '../../components/Organism/grid/MovieGrid';
 import { ScreenHeader } from '../../components/molecules/ScreenHeader/ScreenHeader';
 import { styles } from './styles';
 import { SafeAreaView } from 'react-native-safe-area-context';

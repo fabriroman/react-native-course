@@ -1,13 +1,13 @@
 import { View } from 'react-native';
-import { TextCustom } from '../../../../components/atoms/Text/TextCustom';
-import { Button } from '../../../../components/atoms/Button/Button';
+import { TextCustom } from '../../../components/atoms/Text/TextCustom';
+import { Button } from '../../../components/atoms/Button/Button';
 import { styles } from './styles';
-import { Movie } from '../../../../types/Movie';
-import { useWishlist } from '../../../../contexts/Wishlist/WishlistContext';
-import { useMovieModal } from '../../../../contexts/MovieModal/MovieModalContext';
+import { Movie } from '../../../types/Movie';
+import { useWishlist } from '../../../contexts/Wishlist/WishlistContext';
+import { useMovieModal } from '../../../contexts/MovieModal/MovieModalContext';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
-import { styles as textStyles } from '../../../../components/atoms/Text/styles';
-import { StackParams } from '../../../../types/StackNavigator';
+import { styles as textStyles } from '../../../components/atoms/Text/styles';
+import { StackParams } from '../../../types/StackNavigator';
 
 type Props = {
   movie: Movie;

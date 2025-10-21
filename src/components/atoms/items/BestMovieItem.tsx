@@ -1,10 +1,10 @@
 import { View, TouchableOpacity, Pressable } from 'react-native';
-import { Movie } from '../../../../types/Movie';
+import { Movie } from '../../../types/Movie';
 import { styles } from './styles';
-import { TextCustom } from '../../../../components/atoms/Text/TextCustom';
-import { MovieCard } from '../items/MovieCard';
-import { useWishlist } from '../../../../contexts/Wishlist/WishlistContext';
-import { useMovieModal } from '../../../../contexts/MovieModal/MovieModalContext';
+import { TextCustom } from '../Text/TextCustom';
+import { MovieCard } from './MovieCard';
+import { useWishlist } from '../../../contexts/Wishlist/WishlistContext';
+import { useMovieModal } from '../../../contexts/MovieModal/MovieModalContext';
 
 type Props = {
   movie: Movie;

@@ -1,14 +1,14 @@
 import { FlatList, View, ActivityIndicator } from 'react-native';
 import { MovieSectionHeader } from './MovieSectionHeader';
-import { MovieItem } from '../items/MovieItem';
-import { Movie } from '../../../../types/Movie';
-import { SectionContent } from '../../../../types/Section';
-import { BestMovieItem } from '../items/BestMovieItem';
-import { colors } from '../../../../constants/colors';
+import { MovieItem } from '../../../components/atoms/items/MovieItem';
+import { Movie } from '../../../types/Movie';
+import { SectionContent } from '../../../types/Section';
+import { BestMovieItem } from '../../../components/atoms/items/BestMovieItem';
+import { colors } from '../../../constants/colors';
 import { styles } from './styles';
-import { useMoviesByCompany } from '../../../../hooks/useMoviesByCompany';
-import { useMoviesByGenre } from '../../../../hooks/useMoviesByGenre';
-import { useTopRatedMovies } from '../../../../hooks/useTopRatedMovies';
+import { useMoviesByCompany } from '../../../hooks/useMoviesByCompany';
+import { useMoviesByGenre } from '../../../hooks/useMoviesByGenre';
+import { useTopRatedMovies } from '../../../hooks/useTopRatedMovies';
 
 export const MovieSection = ({
   title,
