@@ -4,16 +4,18 @@ import type { ThemeColors } from '../constants/colorsFun';
 export const TAB_ICONS: Record<string, string> = {
   Home: 'house',
   Search: 'magnifying-glass',
-  Wishlist: 'heart',
+  Wishlist: 'bookmark',
   Profile: 'user',
 };
 
-export const getTabOptions = (colors: ThemeColors): BottomTabNavigationOptions => ({
+export const getTabOptions = (
+  colors: ThemeColors,
+): BottomTabNavigationOptions => ({
   headerShown: false,
   tabBarActiveTintColor: colors.primary,
   tabBarInactiveTintColor: colors.textPrimary,
   tabBarStyle: {
-    backgroundColor: colors.background, 
+    backgroundColor: colors.background,
     borderTopWidth: 0,
     height: 80,
     paddingBottom: 30,
