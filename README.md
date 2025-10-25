@@ -2,6 +2,10 @@
 
 MoviesApp is a React Native application built with TypeScript using the React Native CLI. The project was created as part of the Digital Academy mobile module at AssureSoft, showcasing movies pulled from [The Movie Database (TMDB)](https://developer.themoviedb.org/docs/getting-started) and including a dynamic UI with theming support, deep navigation, and a wishlist workflow tailored for mobile devices.
 
+## Demo
+
+- Team Demo: [Demo Video](https://drive.google.com/file/d/1_Y7ULOhOcdYihcnisn6O9wQy2nWyp-ow/view)
+
 ## Design Reference
 
 - UI inspired by the community Figma file: [Movie App - Dark Theme](https://www.figma.com/community/file/1126286295256197533).
